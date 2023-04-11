@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;700&display=swap');
+
+:root {
+	--font-plain: 'Poppins', Helvetica, Arial, sans-serif;
+	--font-serif: Georgia, serif;
+	--font-special: Barlow Condensed, Helvetica, sans-serif;
+	--font-mono: 'IBM Plex Mono', Courier, Courier New, Andale Mono, monospace;
+
+	--color-dark: #050505;
+	--color-darkish: #404040;
+	--color-lightish: #e6e6e6;
+	--color-light: #fafafa;
+	--color-mid: grey;
+
+	color-scheme: dark light;
+	color: var(--text-base);
+	background-color: var(--bg);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--color-dark: #fafafa;
+		--color-darkish: #e6e6e6;
+		--color-lightish: #404040;
+		--color-light: #050505;
+		--color-mid: grey;
+
+		--text-base: #232323;
+		--bg: #ffffff;
+		--bg-overlay: rgba(255, 255, 255, 0.8);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text-base: #e4e4e4;
+		--bg: #232323;
+		--bg-overlay: rgba(35, 35, 35, 0.8);
+	}
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: var(--font-plain);
+}
+
+svg {
+	width: 1rem;
+	height: 1rem;
+}
